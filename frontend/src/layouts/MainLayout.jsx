@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function MainLayout({children}) {
   return (
@@ -6,7 +7,7 @@ function MainLayout({children}) {
     <header>
         <nav className ="navbar navbar-light bg-primary">
         <div className ="container">
-            <Link to="/" className ="navbar-brand">CoffeePOS</Link>
+            <Link to="/" className ="navbar-brand">BrewPoint</Link>
         </div>
         </nav>
     </header>

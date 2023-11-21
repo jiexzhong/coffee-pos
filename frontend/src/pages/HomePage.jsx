@@ -1,26 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import MainLayout from '../layouts/MainLayout'
 
 function HomePage() {
   return (
-    <div>
-        <header>
-            <nav className ="navbar navbar-light bg-primary">
-            <div className ="container">
-                <Link to="/" className ="navbar-brand">CoffeePOS</Link>
+    <MainLayout>
+        <div className='bg-light p-5 mt-4 rounded-3'>
+                    <h1>Welcome to BrewPoint: Your Specialty Coffee POS Solution</h1>
+                    <p>Featuring a Streamlined Selection of Six Classic Café Favorites!</p>
+                    <Link to='/pos' className='btn btn-primary'>Click Here to Order</Link>
             </div>
-            </nav>
-        </header>
-        <main>
-            <div className='container mt-3'>
-                <div className='bg-light p-5 mt-4 rounded-3'>
-                    <h1>Welcome to the POS for coffee menu</h1>
-                    <p>small menu with six common drink at a typical cafe</p>
-                    <Link to='/pos' className='btn btn-primary'>Click here to see menu</Link>
-            </div>
-            </div>
-        </main>
-    </div>
+    </MainLayout>
   )
 }
 
