@@ -1,23 +1,29 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
 
-function MainLayout({children}) {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+function MainLayout({ children }) {
   return (
     <div>
-    <header>
-        <nav className ="navbar navbar-light bg-primary">
-        <div className ="container">
-            <Link to="/" className ="navbar-brand">BrewPoint</Link>
-        </div>
+      <header>
+        {/* Updated navbar with a warm brown theme */}
+        <nav className="navbar" style={{ backgroundColor: '#6b4f4b' }}>
+          <div className="container">
+            <Link to="/" className="navbar-brand" style={{ color: '#f8f1e7' }}>BrewPoint</Link>
+          </div>
         </nav>
-    </header>
-    <main>
+      </header>
+      <main>
         <div className='container mt-3'>
-        {children}
+          {children}
         </div>
-    </main>
-</div>
+        <ToastContainer/>
+
+      </main>
+    </div>
   )
 }
 
-export default MainLayout
+export default MainLayout;

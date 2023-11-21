@@ -37,7 +37,7 @@ Welcome to the README for **BrewPoint**, a Point of Sale (POS) web application d
 - **Bootstrap**: Ensures a clean and responsive layout, enhancing the overall look and usability of the application.
 
 ### Project Goals
-"The main goal of ***BrewPoint*** is to merge my personal interest in coffee and POS systems with the practical application of web technologies. This project serves as a hands-on experience in learning the basics of React and JSON server, focusing on creating a user-friendly and efficient tool for café environments."
+The main goal of ***BrewPoint*** is to merge my personal interest in coffee and POS systems with the practical application of web technologies. This project serves as a hands-on experience in learning the basics of React and JSON server, focusing on creating a user-friendly and efficient tool for café environments.
 
 ---
 
